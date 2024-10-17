@@ -1,0 +1,76 @@
+import java.io.*;
+import java.lang.*;
+import java.lang.Math;
+import java.util.Scanner;
+public class BasicCalculator {
+	public static void main(String[] args)
+	{
+		double num1, num2;
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the numbers:");
+		num1 = sc.nextDouble();
+		num2 = sc.nextDouble();
+		System.out.println("Enter the operator (+,-,*,/):");
+		char op = sc.next().charAt(0);
+		double o = 0;
+		switch (op) {
+		case '+':
+			o = num1 + num2;
+			break;
+		case '-':
+			o = num1 - num2;
+			break;
+		case '*':
+			o = num1 * num2;
+			break;
+		case '/':
+			o = num1 / num2;
+			break;
+		default:
+			System.out.println("You enter wrong input");
+		}
+		System.out.println("The final result:");
+		System.out.println();
+		System.out.println(num1 + " " + op + " " + num2 + " = " + o);
+	}
+}
+
+out put 1
+Enter the numbers:
+7
+7
+Enter the operator (+,-,*,/):
+*
+The final result:
+
+7.0 * 7.0 = 49.0
+  
+  out put 2
+Enter the numbers:
+7
+7
+Enter the operator (+,-,*,/):
++
+The final result:
+
+7.0 + 7.0 = 14.0
+  
+  out put 3
+Enter the numbers:
+8
+1
+Enter the operator (+,-,*,/):
+-
+The final result:
+
+8.0 - 1.0 = 7.0
+
+  out put 4
+Enter the numbers:
+49
+7
+Enter the operator (+,-,*,/):
+/
+The final result:
+
+49.0 / 7.0 = 7.0
